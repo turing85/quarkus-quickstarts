@@ -1,0 +1,24 @@
+{
+    "mappings": [
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/people/1"
+            },
+            "response": {
+                "status": 200,
+                "bodyFileName": "ids/1.json"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/people/2"
+            },
+            "response": {
+                "status": 200,
+                "bodyFileName": "ids/2.json"
+            }
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 package org.acme.extra;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 import org.junit.jupiter.api.Test;
 
@@ -16,8 +16,7 @@ class ResourceUsingWebClientTest {
                 .when().get("/character-data/1")
                 .then()
                 .statusCode(200)
-                .body(containsString("Luke Skywalker"));
-
+                .body("name", equalTo("Luke Skywalker"));
     }
 
 }
